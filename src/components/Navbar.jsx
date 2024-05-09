@@ -2,7 +2,7 @@ import { links } from "../data";
 
 const Navbar = () => {
   return (
-    <nav className="bg-sky-100">
+    <nav>
       <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:justify-between sm:py-8">
         <h2 className="text-3xl font-bold">
           The<span className="text-sky-600">Starsinn</span>

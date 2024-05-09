@@ -1,12 +1,16 @@
-import { galleryData } from "../data";
+import { featureData } from "../data";
+import SectionTitle from "./SectionTitle";
 
 const Featured = () => {
   return (
     <div className="py-10 align-element">
-      <p className="mt-4 text-5xl capitalize tracking-wide">Featured</p>
+      <SectionTitle text="Featured Services" />
       <div className="py-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {galleryData.map((item) => (
-          <div key={item.id} className="rounded-lg overflow-hidden shadow-xl">
+        {featureData.map((item) => (
+          <div
+            key={item.id}
+            className="rounded-lg overflow-hidden shadow-xl bg-gray-50"
+          >
             <img
               src={item.imageUrl}
               alt={item.description}

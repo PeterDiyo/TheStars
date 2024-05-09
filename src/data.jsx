@@ -6,11 +6,11 @@ import b from "./assets/b.jpg";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
-  { id: nanoid(), href: "#services", text: "services" },
   { id: nanoid(), href: "#about", text: "about" },
+  { id: nanoid(), href: "#services", text: "services" },
 ];
 
-export const galleryData = [
+export const featureData = [
   {
     id: nanoid(),
     imageUrl: ho,
