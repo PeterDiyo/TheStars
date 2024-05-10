@@ -1,12 +1,14 @@
 import { links } from "../data";
+import logo from "/Finall.jpg";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:justify-between sm:py-8">
-        <h2 className="text-3xl font-bold">
+        <img src={logo} className="w-10 h-10 rounded-full" alt="TheStarsinn" />
+        {/* <h2 className="text-3xl font-bold">
           The<span className="text-sky-600">Starsinn</span>
-        </h2>
+        </h2> */}
         <div className="flex gap-x-7">
           {links.map((link) => {
             const { id, href, text } = link;
